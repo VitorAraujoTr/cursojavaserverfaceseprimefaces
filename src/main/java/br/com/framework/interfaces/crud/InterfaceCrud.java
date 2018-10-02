@@ -57,6 +57,7 @@ public interface InterfaceCrud<T> extends Serializable {
 
     List<?> getListSQLDinamica(String sql) throws Exception;
 
+    //JDBC do Spring
     JdbcTemplate getJdbcTemplate();
 
     SimpleJdbcTemplate getSimpleJdbcTemplate();
@@ -67,5 +68,6 @@ public interface InterfaceCrud<T> extends Serializable {
 
     Query obterQuery(String query) throws Exception;
 
+    //Carregamento dinamico vom JSF e PrimeFaces
     List<T> findListByQueryDinamica(String query, int iniciaNoRegistro, int maximoResultado) throws Exception;
 }
