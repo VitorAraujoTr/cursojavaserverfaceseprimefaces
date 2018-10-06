@@ -2,8 +2,6 @@ package br.com.framework.implementacao.crud;
 
 import br.com.framework.hibernate.session.HibernateUtil;
 import br.com.framework.interfaces.crud.InterfaceCrud;
-import javafx.beans.binding.StringBinding;
-import org.hibernate.Hibernate;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -15,7 +13,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
